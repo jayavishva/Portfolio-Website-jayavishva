@@ -354,6 +354,7 @@ header .navbar ul li a:hover {
   gap: 2rem;
   flex-wrap: wrap;
   padding: 4rem;
+  justify-content: space-evenly;
 }
 .about .row .image {
   text-align: center;
