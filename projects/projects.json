@@ -2,22 +2,22 @@
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "portfolio1",
-    "category": "basicweb",
+    "image": "portfolio",
+    "category": "android",
     "links": {
-      "view": "#",
-      "code": "https://github.com/jigar-sable/Portfolio-Website"
+      "view": "https://portfolio-website-jayavishva.vercel.app/",
+      "code": "https://github.com/jayavishva/Portfolio-Website-jayavishva.git"
     }
   },
 
   {
-    "name": "Food Website",
-    "desc": "Basic food website landing page built using HTML, CSS, SASS, Bootstrap and jQuery.",
+    "name": "Restaurant Billing Website",
+    "desc": "A simple restaurant billing system with menu management, cart functionality, QR code payment, bill printing, and sales tracking..",
     "image": "foodwebsite",
     "category": "basicweb",
     "links": {
-      "view": "#",
-      "code": "#"
+      "view": "https://billing-project-drab.vercel.app/",
+      "code": "https://github.com/jayavishva/billing-project.git"
     }
   }
 ]
