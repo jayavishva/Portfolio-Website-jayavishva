@@ -327,7 +327,7 @@
               </div>
             </div>
             <div class="button-area">
-              <button type="submit">
+              <button type="submit" onclick="submit">
                 Submit <i class="fa fa-paper-plane"></i></button>
             </div>
           </form>
@@ -391,6 +391,31 @@
 
     </section>
     <!-- footer section ends -->
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("VKuxdPWTvFg_RP7BS"); // Replace with real public key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.send("service_dgfjye1", "template_a8hy30m", {
+          from_name: this.name.value,
+          from_email: this.email.value,
+          phone: this.phone.value,
+          message: this.message.value
+      })
+      .then(function() {
+          alert("Message sent successfully!");
+          document.getElementById("contact-form").reset();
+      }, function(error) {
+          alert("Failed to send message.");
+          console.log(error);
+      });
+  });
+</script>
 
     <!-- scroll top btn -->
     <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up"
@@ -426,6 +451,11 @@
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+</script>
+
 
     <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
